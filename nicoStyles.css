@@ -1,0 +1,59 @@
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+
+    /* or use Tailwinds "antialias" class */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+}
+
+/* Reset inconsistent vanilla CSS styles (TailwindCSS does this) */
+/* Alternative: Normalize.css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+
+/* ---------------------- SHOWCASE ---------------------- */
+.___layout {
+    /* Display */
+    display: inline;
+    display: block;
+    display: flex;
+    display: grid;
+    display: none;
+
+    /* Position */
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+
+    overflow: auto;
+}
+
+.___misc {
+    /* Image */
+    object-fit: cover;
+
+    /* Gradients TODO */
+}
