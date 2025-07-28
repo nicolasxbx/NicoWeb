@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="nicolas.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/digitallytailored/classless@latest/classless.min.css"> -->
+
+    <title>Title</title>
+</head>
+
+<body>
+    <!-- HTML Kommentar -->
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <main>
+        <section>
+            <h1>Heading Level 1</h1>
+            <h2>Heading Level 2</h2>
+            <h3>Heading Level 3</h3>
+            <h4>Heading Level 4</h4>
+            <h5>Heading Level 5</h5>
+            <h6>Heading Level 6</h6>
+            <p>This is a standard paragraph. Lorem ipsum dolor sit amet, which is Latin for "I forgot to write actual
+                content". <strong>Bold text</strong> for when you're really serious and <em>italic text</em> for when
+                you're being
+                sarcastic.
+                You can also use <a href="#">links</a>.
+            </p>
+            <small>This is smaller text, perfect for legal disclaimers nobody reads.</small>
+
+            <h3>Code</h3>
+            <p>When writing about programming, it's often useful to include <code>inline code snippets</code> within
+                your text.
+            </p>
+            <pre><code>// This function says hello
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+            
+console.log(greet('World'));
+</code></pre>
+
+            <blockquote>
+                "This blockquote makes me look profound and philosophical."
+                <footer>— Someone Who Thinks They're Famous</footer>
+            </blockquote>
+
+            <h3>Image</h3>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=400&h=250&fit=crop"
+                    alt="Sunrise over invisible mountains">
+                <figcaption>A beautiful sunrise over invisible mountains</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Lists</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item with nested list
+                    <ul>
+                        <li>Nested item 1</li>
+                        <li>Nested item 2</li>
+                    </ul>
+                </li>
+                <li>Fourth item</li>
+            </ul>
+
+            <hr>
+
+            <h3>Ordered List (after horizontal line)</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item with nested list
+                    <ol>
+                        <li>Nested item 1</li>
+                        <li>Nested item 2</li>
+                    </ol>
+                </li>
+                <li>Fourth item</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marty McFly</td>
+                        <td>marty@hillvalley.edu</td>
+                        <td>Time Traveler</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>Doc Brown</td>
+                        <td>doc@brownenterprises.com</td>
+                        <td>Scientist</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Forms</h2>
+            <form>
+                <label for="search-input">Search</label>
+                <input type="search" id="search-input" placeholder="Search...">
+
+                <label for="text-input">Text</label>
+                <input type="text" id="text-input" placeholder="Enter text">
+
+                <label for="email-input">Email</label>
+                <input type="email" id="email-input" placeholder="Enter email">
+
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input" placeholder="Enter password">
+
+                <label for="tel-input">Telephone</label>
+                <input type="tel" id="tel-input" placeholder="Enter phone number">
+
+                <label for="url-input">URL</label>
+                <input type="url" id="url-input" placeholder="Enter URL">
+
+                <label for="date-input">Date</label>
+                <input type="date" id="date-input">
+
+                <label for="time-input">Time</label>
+                <input type="time" id="time-input">
+
+                <label for="color-input">Color</label>
+                <input type="color" id="color-input">
+
+                <label for="file-input">File</label>
+                <input type="file" id="file-input">
+
+                <label for="range-input">Range</label>
+                <input type="range" id="range-input" min="0" max="100">
+
+                <label for="select">Select</label>
+                <select id="select">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+
+                <label for="textarea">Textarea</label>
+                <textarea id="textarea" placeholder="Enter long form text"></textarea>
+
+                <label>Checkbox</label>
+                <label for="checkbox-input-1"><input type="checkbox" id="checkbox-input-1"> Option 1</label>
+                <label for="checkbox-input-2"><input type="checkbox" id="checkbox-input-2"> Option 2</label>
+
+                <label>Radio</label>
+                <label for="radio-input-1"><input type="radio" name="radio-group" id="radio-input-1"> Option 1</label>
+                <label for="radio-input-2"><input type="radio" name="radio-group" id="radio-input-2"> Option 2</label>
+
+                <button type="submit">Submit</button>
+                <button type="reset" disabled>Defy</button>
+            </form>
+
+            <p>Empty buttons are shown as loading, giving you plenty of time add some content</p>
+            <button></button>
+            <button disabled></button>
+        </section>
+
+        <section>
+            <h2>Buttons</h2>
+            <button>No Class</button>
+            <button class="success">.success</button>
+            <button class="danger">.danger</button>
+            <button class="warning">.warning</button>
+            <button class="info">.info</button>
+            <button class="outline">.outline</button>
+            <script>
+                const buttons = document.currentScript.parentElement.getElementsByTagName('button');
+                for (let btn of buttons) {
+                    btn.addEventListener('click', function () {
+                        const className = this.className || 'No Class';
+                        alert(`${className}"`);
+                    });
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <small>Made with 💗 by Nicolas Binder</small>
+    </footer>
+
+</body>
+
+</html>

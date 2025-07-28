@@ -1,0 +1,128 @@
+/* A Guide for myself */
+
+.layout {
+    display: inline/block/flex/grid/none;
+    position: relative/absolute/fixed/sticky;
+    overflow: auto/scroll;
+    visibility: hidden/visible;
+    opacity: 50%;
+}
+
+.flex_and_grid {
+    /* 4px, 8px, 12px ... */
+    gap: 4px;
+    justify-content: flex-start/flex-end/center/stretch/space-between/space-evenly;
+
+    /* Item */
+    align-self: auto/flex-start/flex-end/center/stretch;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row/column;
+    align-items: flex-start/flex-end/center/stretch;
+    flex-wrap: wrap;
+
+    /* Flex Items */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: start/end/center/stretch;
+
+    /* Grid Items */
+    justify-self: auto/start/end/center/stretch;
+    grid-column: 1 / -1;
+}
+
+.padding_margin {
+    /* padding-left/right/top/bottom: 4px; */
+    padding: 4px;
+    padding-inline: 1px;
+    padding-block: 1px;
+}
+
+.sizing {
+    width: 10px/100%/100vw;
+    height: 100vh;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.background {
+    background-color: black;
+    background-image: none;
+    background-size: cover;
+    background-repeat: repeat/repeat-x/repeat-y/no-repeat;
+}
+
+.borders {
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid/dashed/dotted/double;
+}
+
+.typography {
+    /* 12,14,16,18,20,24,30 */
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1/6/7;
+
+    color: black;
+    text-align: left/center/right;
+
+    text-wrap: wrap/balance/pretty;
+    word-break: normal/break-all;
+}
+
+.effects {
+    /* X Y BLUR SPREAD COLOR, [... other shadows] */
+    box-shadow: 0 0 #0000, 0 4px 6px -4px black;
+    text-shadow: 0px 1px 1px black;
+
+    backdrop-filter: blur(16px);
+
+    cursor: pointer/none;
+    user-select: none;
+}
+
+.transforms {
+    rotate: 90deg;
+    scale: 100%;
+
+    transform-origin: center;
+    transform: skewX(9deg) skewY(9deg)
+}
+
+.svg {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: 1;
+}
+
+.misc {
+    /* Image */
+    object-fit: cover;
+
+    /* List Styles */
+    list-style-type: disc/decimal/none;
+
+    /* Accent Color of some controls */
+    accent-color: black;
+}
+
+/* --- Media Queries for Responsive Design --- */
+/* Mobile */
+@media (max-width: 600px) {}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {}
+
+/* Desktop */
+@media (min-width: 1025px) {}
